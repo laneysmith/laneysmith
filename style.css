@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  color: #303030;
+  background-color: #F0F0F0;
+  display: flex;
+  min-height: 100vh;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("grey.jpg");
+}
+
+.container {
+  margin: 0 auto;
+
+  /*background-color: orange;*/
+}
+
+.title {
+  /*background-color: pink;*/
+}
+
+.subtitle {
+  /*background-color: green;*/
+  margin: 1.5rem 0;
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.13rem;
+  line-height: 1.5rem;
+  color: #f76262;
+  text-shadow: 1px 1px #FFFFFF;
+}
+
+.title .name {
+  font-family: 'Slabo 27px', serif;
+  font-size: 3em;
+  line-height: 1em;
+  text-shadow: 2px 2px #FFFFFF;
+}
+
+.contact {
+  margin: 0 0 2rem 0;
+  font-family: 'Slabo 27px', serif;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.5em;
+  text-shadow: 1px 1px #FFFFFF;
+}
+
+.contact li {
+  margin-left: -10px;
+}
+
+.contact a {
+  padding: 0 10px 0 5px;
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, rgba(247,98,98,0.25) 50%);
+  background-position: -0% 0;
+  background-size: 200% auto;
+  color: #404040;
+  text-decoration: none;
+  transition: background-position 0.5s ease-out;
+}
+
+.contact a:hover {
+  background-position: -99.99% 0;
+}
+
+.cursor {
+  font-weight: 100;
+  font-size: 3.2rem;
+  line-height: 1em;
+  position: relative;
+  color: #202020;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
