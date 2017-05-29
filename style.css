@@ -8,36 +8,31 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("grey.jpg");
+  background-image: url("img/grey.jpg");
 }
 
 .container {
   margin: 0 auto;
-
-  /*background-color: orange;*/
 }
 
-.title {
-  /*background-color: pink;*/
+.name {
+  font-family: 'Slabo 27px', serif;
+  font-size: 3em;
+  line-height: 1em;
+  text-shadow: 2px 2px #FFFFFF;
 }
 
 .subtitle {
-  /*background-color: green;*/
   margin: 1.5rem 0;
   font-family: 'Lora', serif;
   font-weight: bold;
   font-style: italic;
   font-size: 1.13rem;
   line-height: 1.5rem;
-  color: #f76262;
+  color: #5ea5d1;
   text-shadow: 1px 1px #FFFFFF;
-}
+  text-align: center;
 
-.title .name {
-  font-family: 'Slabo 27px', serif;
-  font-size: 3em;
-  line-height: 1em;
-  text-shadow: 2px 2px #FFFFFF;
 }
 
 .contact {
@@ -47,24 +42,33 @@ body {
   font-weight: bold;
   line-height: 1.5em;
   text-shadow: 1px 1px #FFFFFF;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.contact li {
-  margin-left: -10px;
+#github {
+  width: 48px;
+}
+#linkedin {
+  width: 48px;
+}
+#mail {
+  width: 41px;
 }
 
 .contact a {
-  padding: 0 10px 0 5px;
-  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, rgba(247,98,98,0.25) 50%);
-  background-position: -0% 0;
-  background-size: 200% auto;
-  color: #404040;
   text-decoration: none;
-  transition: background-position 0.5s ease-out;
 }
 
 .contact a:hover {
-  background-position: -99.99% 0;
+  opacity: 0.5;
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
 }
 
 .cursor {
