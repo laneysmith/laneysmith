@@ -1,14 +1,13 @@
 body {
   margin: 0;
   color: #303030;
-  background-color: #F0F0F0;
   display: flex;
   min-height: 100vh;
   flex: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("img/grey.jpg");
+  background: #F0F0F0 url("img/grey.jpg");
 }
 
 .container {
@@ -23,21 +22,20 @@ body {
 }
 
 .subtitle {
-  margin: 1.5rem 0;
-  font-family: 'Lora', serif;
-  font-weight: bold;
-  font-style: italic;
-  font-size: 1.13rem;
-  line-height: 1.5rem;
-  color: #5ea5d1;
+  margin: 24px 0 30px 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1.2rem;
+  color: #3f7dd4;
   text-shadow: 1px 1px #FFFFFF;
   text-align: center;
-
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .contact {
   margin: 0 0 2rem 0;
-  font-family: 'Slabo 27px', serif;
   font-size: 1em;
   font-weight: bold;
   line-height: 1.5em;
@@ -49,22 +47,13 @@ body {
   align-items: center;
 }
 
-#github {
-  width: 48px;
-}
-#linkedin {
-  width: 48px;
-}
-#mail {
-  width: 41px;
-}
-
 .contact a {
+  color: #303030;
   text-decoration: none;
 }
 
 .contact a:hover {
-  opacity: 0.5;
+  opacity: 0.7;
   transition: 200ms;
   transition-timing-function: ease-in-out;
   -webkit-transition: 200ms;
@@ -76,6 +65,7 @@ body {
   font-size: 3.2rem;
   line-height: 1em;
   position: relative;
+  /*text-shadow: 2px 2px #FFFFFF;*/
   color: #202020;
   -webkit-animation: 1s blink step-end infinite;
   -moz-animation: 1s blink step-end infinite;
@@ -84,47 +74,57 @@ body {
   animation: 1s blink step-end infinite;
 }
 
-@keyframes "blink" {
+@keyframes blink {
   from, to {
     color: transparent;
+    text-shadow: none;
   }
   50% {
     color: black;
+    text-shadow: 2px 2px #FFFFFF;
   }
 }
 
 @-moz-keyframes blink {
   from, to {
     color: transparent;
+    text-shadow: none;
   }
   50% {
     color: black;
+    text-shadow: 2px 2px #FFFFFF;
   }
 }
 
-@-webkit-keyframes "blink" {
+@-webkit-keyframes blink {
   from, to {
     color: transparent;
+    text-shadow: none;
   }
   50% {
     color: black;
+    text-shadow: 2px 2px #FFFFFF;
   }
 }
 
-@-ms-keyframes "blink" {
+@-ms-keyframes blink {
   from, to {
     color: transparent;
+    text-shadow: none;
   }
   50% {
     color: black;
+    text-shadow: 2px 2px #FFFFFF;
   }
 }
 
-@-o-keyframes "blink" {
+@-o-keyframes blink {
   from, to {
     color: transparent;
+    text-shadow: none;
   }
   50% {
     color: black;
+    text-shadow: 2px 2px #FFFFFF;
   }
 }
